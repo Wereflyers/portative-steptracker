@@ -15,7 +15,7 @@ public class StepTracker {
         int series = 0;
         int bestSeries = 0;
         for (int i=0;i<30;i++){
-            System.out.println((i+1)+ " день: "+ monthToData[month][i]);
+            System.out.print((i+1)+ " день: "+ monthToData[month][i]+" ");
             monthSteps=monthSteps+monthToData[month][i];
             if(monthToData[month][i]>maxSteps)
             {maxSteps=monthToData[month][i];}
@@ -26,7 +26,8 @@ public class StepTracker {
             {bestSeries=series;}
                 series=0;}
         }
-        System.out.println("Общее количество шагов за месяц: "+monthSteps+".\n"+
+        System.out.println("\n"+
+         "Общее количество шагов за месяц: "+monthSteps+".\n"+
         "Максимальное количество шагов в этом месяце: "+maxSteps+".\n"+
         "Среднее количество шагов в этом месяце: "+monthSteps/30+".");
         converter.convertkm(monthSteps);
