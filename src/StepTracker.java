@@ -15,7 +15,9 @@ public class StepTracker {
         int series = 0;
         int bestSeries = 0;
         for (int i=0;i<30;i++){
-            System.out.print((i+1)+ " день: "+ monthToData[month][i]+" ");
+            System.out.print((i+1)+ " день: "+ monthToData[month][i]);
+            if (i!=29)
+            {System.out.print(", ");}
             monthSteps=monthSteps+monthToData[month][i];
             if(monthToData[month][i]>maxSteps)
             {maxSteps=monthToData[month][i];}
