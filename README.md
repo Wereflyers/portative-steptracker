@@ -6,5 +6,5 @@ The project is a simple and effective implementation of the step counter that we
 This project is easy to install and use. You just need to install it on your computer with Java SE 11 and run the main method.
 
 ### Plans for this project
-:black_square_button: Introduce web service
+:black_square_button: Introduce web service    
 :black_square_button: Add the possibility of adding steps through the connection of locations where the user is marked
